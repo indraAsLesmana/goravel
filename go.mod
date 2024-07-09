@@ -1,6 +1,8 @@
 module goravel
 
-go 1.21
+go 1.22
+
+toolchain go1.22.5
 
 require (
 	github.com/gin-gonic/gin v1.10.0
@@ -30,6 +32,7 @@ require (
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/aws/aws-sdk-go v1.49.6 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
+	github.com/brianvoe/gofakeit/v7 v7.0.4 // indirect
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/catppuccin/go v0.2.0 // indirect
