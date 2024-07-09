@@ -14,7 +14,7 @@ func init() {
 		"connections": map[string]any{
 			"mysql": map[string]any{
 				"driver":   "mysql",
-				"host":     config.Env("DB_HOST", "127.0.0.1"),
+				"host":     config.Env("DB_HOST", "192.168.2.76"),
 				"port":     config.Env("DB_PORT", 3306),
 				"database": config.Env("DB_DATABASE", "forge"),
 				"username": config.Env("DB_USERNAME", ""),
