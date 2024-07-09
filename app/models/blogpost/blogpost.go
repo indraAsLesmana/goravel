@@ -1,4 +1,4 @@
-package blogpost
+package models
 
 import (
 	"github.com/goravel/framework/database/orm"
