@@ -2,7 +2,7 @@ CREATE TABLE attachments (
     id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
     created_at datetime(3) NOT NULL,
     updated_at datetime(3) NOT NULL,
-    blogpost_id INT NOT NULL,
+    blogpost_id bigint(20) unsigned NOT NULL,
     title VARCHAR(255) NOT NULL,
     url VARCHAR(255) NOT NULL,
     PRIMARY KEY (id),
