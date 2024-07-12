@@ -1,6 +1,7 @@
-package models
+package blogpost
 
 import (
+	models "goravel/app/models/attachment"
 	"goravel/database/factories"
 
 	"github.com/goravel/framework/contracts/database/factory"
@@ -9,8 +10,9 @@ import (
 
 type Blogpost struct {
 	orm.Model
-	Title string
-	Url   string
+	Title       string
+	Url         string
+	Attachments []*models.Attachment
 	orm.SoftDeletes
 }
 

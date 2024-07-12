@@ -5,7 +5,6 @@ import (
 	"log"
 	"os"
 
-	models "goravel/app/models/blogpost"
 	"goravel/bootstrap"
 
 	"github.com/goravel/framework/facades"
@@ -43,11 +42,18 @@ func main() {
 	log.Println("successfully connected to the database")
 
 	// testing create factory
-	var posts []models.Blogpost
-	facades.Orm().Factory().Count(5).Create(&posts)
+	// var posts []models.Blogpost
+	// facades.Orm().Factory().Count(5).Create(&posts)
 
 	// post := make([]models.User, 5)
 	// err := facades.Orm().Factory().Create(&post)
+
+	// var post []models.Blogpost
+	// facades.Orm().Factory().Count(5).Make(&post)
+	// //create looping for post
+	// for i := 0; i < len(post); i++ {
+	// 	print(post[i].Title + "\n")
+	// }
 
 	select {}
 }

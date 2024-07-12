@@ -15,3 +15,10 @@ Migration fresh success
 
 go run . artisan migrate:fresh
 Migration fresh success
+
+
+go run . artisan make:migration create_attachments_table
+
+
+// rollback when migrating 2 table
+go run . artisan migrate:rollback --step=2
